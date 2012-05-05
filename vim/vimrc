@@ -1,0 +1,39 @@
+set nocompatible
+filetype plugin indent on
+set t_Co=256
+syntax enable
+colorscheme tomorrow-night
+set number
+set laststatus=2
+filetype indent on
+set nohlsearch
+set incsearch
+set ruler
+set autoindent
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set nowrap
+
+if has("gui_running")
+  set guioptions=egmrt
+  set guifont=Monaco:h14
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> :CommandT<CR>
+endif
+
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
+map <C-S-l> :bnext<cr>
+map <C-S-h> :bprevious<cr>
+
+runtime! macros/matchit.vim
+runtime! plugin/command-t.vim

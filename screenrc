@@ -1,0 +1,35 @@
+#
+# Disable the annoying startup message
+#
+startup_message off
+shell -$SHELL
+
+#
+# Shift-left and shift-right switch screens
+#
+bindkey ^[[5D prev
+bindkey ^[[5C next
+
+hardstatus alwayslastline "%{=b}%{G} Screen(s): %{C}%w %=%{kG}%M/%d/%Y"
+
+unsetenv DISPLAY
+setenv LC_CTYPE en_US.UTF-8
+
+shell bash
+vbell off
+defscrollback 5000
+defutf8 on
+nonblock on
+
+bindkey -k k1 select 0
+bindkey -k k2 select 1
+bindkey -k k3 select 2
+bindkey -k k4 select 3
+bindkey -k k5 select 4
+bindkey -k k6 select 5
+bindkey -k k7 select 6
+bindkey -k k8 select 7
+bindkey -k k9 select 8
+bindkey -k k; select 9
+bindkey -k F1 select 10
+bindkey -k F2 select 11
