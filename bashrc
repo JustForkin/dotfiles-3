@@ -13,6 +13,6 @@ alias rtest="bundle exec ruby -Itest"
 alias brake="bundle exec rake"
 alias gitsha='git rev-parse HEAD | pbcopy'
 
-source ~/.rvm/scripts/rvm
+export PATH=$HOME/.rbenv/bin:$PATH:/usr/local/mysql/bin
 
-export PATH=$PATH:/usr/local/mysql/bin
+eval "$(rbenv init -)"

@@ -1,6 +1,7 @@
 # Misc
 cp screenrc ~/.screenrc
 cp bashrc ~/.bashrc
+cp gemrc ~/.gemrc
 
 # Vim
 rm -rf ~/.vim*
