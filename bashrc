@@ -4,7 +4,7 @@ MAGENTA="\[\e[1;35m\]"
 GREEN="\[\e[1;36m\]"
 GRAY="\[\e[0;37m\]"
 
-export PS1="$GRAY[$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$GRAY]# "
+export PS1="$GRAY$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$GRAY\n# "
 
 alias be="bundle exec"
 alias ls="ls -G"
