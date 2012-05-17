@@ -37,3 +37,5 @@ map <C-S-h> :bprevious<cr>
 
 runtime! macros/matchit.vim
 runtime! plugin/command-t.vim
+
+autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
