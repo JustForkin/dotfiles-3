@@ -20,7 +20,7 @@ if has("gui_running")
   set guioptions=egmrt
   set guifont=Monaco:h14
   macmenu &File.New\ Tab key=<nop>
-  map <D-t> :CommandT<CR>
+  map <D-t> :CommandTFlush<CR>:CommandT<CR>
 endif
 
 noremap  <Up> ""
