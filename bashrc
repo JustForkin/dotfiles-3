@@ -15,6 +15,6 @@ alias gitsha="git rev-parse HEAD | pbcopy"
 alias glf="git log --pretty=full"
 alias gls='git log --pretty="%Cgreen%h%Creset (%Cblue%p%Creset) %Cred%an%Creset: %s"'
 
-export PATH=$HOME/.rbenv/bin:$PATH:/usr/local/mysql/bin
+export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
 eval "$(rbenv init -)"
