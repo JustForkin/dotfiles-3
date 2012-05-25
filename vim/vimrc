@@ -16,6 +16,8 @@ set shiftwidth=2
 set expandtab
 set nowrap
 set colorcolumn=80
+set backup
+set backupdir=~/vim/tmp
 
 if has("gui_running")
   set guioptions=egmrt
