@@ -17,14 +17,8 @@ set expandtab
 set nowrap
 set colorcolumn=80
 set backup
-set backupdir=~/vim/tmp
-
-if has("gui_running")
-  set guioptions=egmrt
-  set guifont=Monaco:h14
-  macmenu &File.New\ Tab key=<nop>
-  map <D-t> :CommandTFlush<CR>:CommandT<CR>
-endif
+set backupdir=~/.vim/tmp
+set directory=~/.vim/tmp
 
 noremap  <Up> ""
 noremap! <Up> <Esc>
