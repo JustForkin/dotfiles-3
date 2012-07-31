@@ -18,4 +18,6 @@ alias gls='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Cr
 
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
+set -o vi
+
 eval "$(rbenv init -)"
