@@ -20,4 +20,6 @@ export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
 set -o vi
 
+source ~/.git_completion.bash
+
 eval "$(rbenv init -)"
