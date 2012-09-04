@@ -2,6 +2,7 @@
 cp screenrc ~/.screenrc
 cp bashrc ~/.bashrc
 cp gemrc ~/.gemrc
+cp tmux.conf ~/.tmux.conf
 
 # Vim
 rm -rf ~/.vim*
