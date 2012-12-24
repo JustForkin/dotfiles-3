@@ -2,7 +2,8 @@ set nocompatible
 filetype plugin indent on
 set t_Co=256
 syntax enable
-colorscheme tomorrow-night
+set background=dark
+colorscheme solarized
 set number
 set laststatus=2
 filetype indent on
