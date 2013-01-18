@@ -15,6 +15,9 @@ alias gitsha="git rev-parse HEAD | pbcopy"
 alias glf="git log --pretty=full"
 alias gls='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Creset: %s"'
 
+alias tS="tmux new -s"
+alias trd="tmux attach-session -t"
+
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
 set -o vi
