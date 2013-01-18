@@ -9,7 +9,6 @@ export EDITOR="vim"
 
 alias be="bundle exec"
 alias ls="ls -G"
-alias screen="TERM=screen screen"
 alias rtest="bundle exec ruby -Itest -Ispec"
 alias brake="bundle exec rake"
 alias gitsha="git rev-parse HEAD | pbcopy"

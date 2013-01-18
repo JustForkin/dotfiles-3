@@ -1,5 +1,4 @@
 # Misc
-cp screenrc ~/.screenrc
 cp bashrc ~/.bashrc
 cp gemrc ~/.gemrc
 cp gitconfig ~/.gitconfig
