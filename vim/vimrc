@@ -36,6 +36,11 @@ nnoremap K i<CR><Esc>
 map <C-S-l> :bnext<cr>
 map <C-S-h> :bprevious<cr>
 
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 runtime! macros/matchit.vim
 
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72

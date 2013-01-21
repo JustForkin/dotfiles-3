@@ -2,6 +2,7 @@
 cp bashrc ~/.bashrc
 cp gemrc ~/.gemrc
 cp gitconfig ~/.gitconfig
+cp inputrc ~/.inputrc
 cp tmux.conf ~/.tmux.conf
 
 # Vim

@@ -18,6 +18,7 @@ alias gls='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Cr
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
 
+export INPUTRC=$HOME/.inputrc
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
 set -o vi
