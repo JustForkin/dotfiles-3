@@ -14,6 +14,7 @@ alias brake="bundle exec rake"
 alias gitsha="git rev-parse HEAD | pbcopy"
 alias glf="git log --pretty=full"
 alias gls='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Creset: %s"'
+alias gd="git diff --color"
 
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
