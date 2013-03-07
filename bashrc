@@ -9,13 +9,16 @@ export PS1="$GRAY$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | se
 export TERM="xterm-256color"
 
 alias be="bundle exec"
+alias less="less -R"
 alias ls="ls -G"
 alias rtest="bundle exec ruby -Itest -Ispec"
 alias brake="bundle exec rake"
+
 alias gitsha="git rev-parse HEAD | pbcopy"
 alias glf="git log --pretty=full"
 alias gls='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Creset: %s"'
 alias gd="git diff --color"
+alias gsd="git diff --stat --summary --color"
 
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
