@@ -3,3 +3,5 @@
 	email = nathanladd+github@gmail.com
 [push]
 	default = tracking
+[color]
+  ui = true

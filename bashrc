@@ -17,8 +17,11 @@ alias brake="bundle exec rake"
 alias gitsha="git rev-parse HEAD | pbcopy"
 alias glf="git log --pretty=full"
 alias gls='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Creset: %s"'
-alias gd="git diff --color"
-alias gsd="git diff --stat --summary --color"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gsd="git diff --stat --summary"
+alias g,="git add ."
+alias g.="git commit -a"
 
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
