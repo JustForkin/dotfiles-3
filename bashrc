@@ -17,6 +17,7 @@ alias brake="bundle exec rake"
 alias gitsha="git rev-parse HEAD | pbcopy"
 alias glf="git log --pretty=full"
 alias gls='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Creset: %s"'
+alias gc='git commit'
 alias gd="git diff"
 alias ga='git add'
 alias gap='git add -p'
