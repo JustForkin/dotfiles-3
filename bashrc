@@ -25,7 +25,7 @@ alias gdc="git diff --cached"
 alias gs="git status"
 alias gsd="git diff --stat --summary"
 alias g,="git add ."
-alias g.="git commit -a"
+alias g.="git commit -a -v"
 
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
