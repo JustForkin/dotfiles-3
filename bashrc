@@ -26,6 +26,7 @@ alias gs="git status"
 alias gsd="git diff --stat --summary"
 alias g,="git add ."
 alias g.="git commit -a -v"
+alias gstandup="git log --since=yesterday --before=today --author=$(whoami)"
 
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
