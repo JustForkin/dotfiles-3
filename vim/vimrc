@@ -45,6 +45,8 @@ runtime! macros/matchit.vim
 
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
 autocmd BufNewFile,BufRead *.haml set wrap
+autocmd BufNewFile,BufRead *.slim set wrap
 autocmd BufNewFile,BufRead *.md set wrap
 
 autocmd BufNewFile,BufRead *.mkd,*.md,*.markdown,*.mdown set filetype=mkd
+autocmd BufNewFile,BufRead *.slim set filetype=slim
