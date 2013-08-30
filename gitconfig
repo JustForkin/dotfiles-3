@@ -5,3 +5,5 @@
 	default = tracking
 [color]
   ui = true
+[core]
+	pager = less -+F
