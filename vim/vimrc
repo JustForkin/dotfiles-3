@@ -41,6 +41,10 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+imap <f5> <esc> <f5>
+imap <f6> <esc> <f6>
+imap <f7> <esc> <f7>
+
 runtime! macros/matchit.vim
 
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
