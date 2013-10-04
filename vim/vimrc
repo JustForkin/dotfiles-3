@@ -33,13 +33,18 @@ noremap! <Right> <Esc>
 
 nnoremap K i<CR><Esc>
 
-map <C-S-l> :bnext<cr>
-map <C-S-h> :bprevious<cr>
+map <C-w>l :bnext<cr>
+map <C-w>h :bprevious<cr>
 
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <C-h> :wincmd h<cr>
+map <C-j> :wincmd j<cr>
+map <C-k> :wincmd k<cr>
+map <C-l> :wincmd l<cr>
+
+map <Esc>h :vertical resize -5<cr>
+map <Esc>j :resize +5<cr>
+map <Esc>k :resize -5<cr>
+map <Esc>l :vertical resize +5<cr>
 
 imap <f5> <esc> <f5>
 imap <f6> <esc> <f6>
