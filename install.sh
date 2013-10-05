@@ -4,6 +4,7 @@ cp gemrc ~/.gemrc
 cp gitconfig ~/.gitconfig
 cp inputrc ~/.inputrc
 cp tmux.conf ~/.tmux.conf
+cp tmux.completion.bash ~/.tmux.completion.bash
 
 # Vim
 rm -rf ~/.vim*
