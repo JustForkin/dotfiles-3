@@ -1,0 +1,3 @@
+[submodule "vim/dot_vim/bundle/vim-dispatch"]
+	path = vim/dot_vim/bundle/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
