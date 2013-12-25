@@ -37,8 +37,10 @@ noremap! <Right> <Esc>
 
 nnoremap K i<CR><Esc>
 
-map <C-w>l :bnext<cr>
-map <C-w>h :bprevious<cr>
+noremap <Esc>H :vertical resize -5<cr>
+noremap <Esc>J :resize +5<cr>
+noremap <Esc>K :resize -5<cr>
+noremap <Esc>L :vertical resize +5<cr>
 
 noremap te :tabf<Space>
 noremap th :tabfirst<cr>
@@ -58,6 +60,7 @@ imap <f6> <esc> <f6>
 imap <f7> <esc> <f7>
 
 runtime! macros/matchit.vim
+runtime! plugin/tmux_navigator.vim
 
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
 autocmd BufNewFile,BufRead *.haml set wrap
