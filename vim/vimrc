@@ -40,10 +40,13 @@ nnoremap K i<CR><Esc>
 map <C-w>l :bnext<cr>
 map <C-w>h :bprevious<cr>
 
-map <C-h> :wincmd h<cr>
-map <C-j> :wincmd j<cr>
-map <C-k> :wincmd k<cr>
-map <C-l> :wincmd l<cr>
+noremap te :tabf<Space>
+noremap th :tabfirst<cr>
+noremap tj :tabp<cr>
+noremap tk :tabn<cr>
+noremap tl :tablast<cr>
+noremap J :tabp<cr>
+noremap K :tabn<cr>
 
 map <Esc>h :vertical resize -5<cr>
 map <Esc>j :resize +5<cr>
