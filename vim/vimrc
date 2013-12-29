@@ -42,13 +42,11 @@ noremap <Esc>J :resize +5<cr>
 noremap <Esc>K :resize -5<cr>
 noremap <Esc>L :vertical resize +5<cr>
 
-noremap te :tabf<Space>
+noremap te :tabe<Space>
 noremap th :tabfirst<cr>
 noremap tj :tabp<cr>
 noremap tk :tabn<cr>
 noremap tl :tablast<cr>
-noremap J :tabp<cr>
-noremap K :tabn<cr>
 
 map <f5> :w <cr> :execute "Dispatch splot -f % -l " . ( line(".") + 1 )<cr>
 map <f6> :w <cr> :Dispatch splot -f %<cr>
