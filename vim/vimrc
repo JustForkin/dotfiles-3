@@ -66,3 +66,5 @@ autocmd BufNewFile,BufRead *.md set wrap
 autocmd BufNewFile,BufRead *.slim set syntax=slim
 
 autocmd BufNewFile,BufRead Vagrantfile,Procfile,Guardfile,Gemfile set filetype=ruby
+
+let $PATH="./bin:".$PATH
