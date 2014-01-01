@@ -50,6 +50,7 @@ noremap tl :tablast<cr>
 
 map <f5> :w <cr> :execute "Dispatch splot -f % -l " . ( line(".") + 1 )<cr>
 map <f6> :w <cr> :Dispatch splot -f %<cr>
+map <f7> :w <cr> :Dispatch rake<cr>
 
 imap <f5> <esc> <f5>
 imap <f6> <esc> <f6>
