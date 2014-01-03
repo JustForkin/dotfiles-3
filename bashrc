@@ -36,6 +36,7 @@ alias gstandup="git log --since=yesterday --before=today --author=$(whoami)"
 alias gme="git branch $@ | sed -E 's/^\*? *//' | xargs -L 1 git log -1 --pretty='%Cgreen%ci %Cblue(%cr) %Cred%h%Cgreen%d %Creset%s' | sort -n"
 alias gmer="git branch -a | grep -v HEAD | sed -E 's/^\*? *//' | xargs -L 1 git log -1 --pretty='%h %an' | egrep \"^[0-9a-z]+ $(git config --get user.name)\" | cut -d ' ' -f 1 | xargs -L 1 git log -1 --pretty='%Cgreen%ci %Cblue(%cr) %Cred%h%Cgreen%d %Creset%s' | sort -n | uniq"
 alias grd='git_review_diffs() { base_commit=`git merge-base HEAD $1`;git log --reverse --pretty=%h $base_commit..HEAD | xargs -I{} -L1 git diff {}~1..{} -- $2 ; } ; git_review_diffs'
+alias rtags='ctags -R --languages=Ruby --totals -f tags'
 
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
