@@ -2,6 +2,7 @@
 cp bashrc ~/.bashrc
 cp gemrc ~/.gemrc
 cp gitconfig ~/.gitconfig
+cp gitignore_global ~/.gitignore_global
 cp inputrc ~/.inputrc
 cp tmux.conf ~/.tmux.conf
 cp tmux.completion.bash ~/.tmux.completion.bash
