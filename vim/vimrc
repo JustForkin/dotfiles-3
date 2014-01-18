@@ -23,6 +23,7 @@ set backup
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set wildmode=longest,list
+set hidden
 
 let mapleader=","
 
