@@ -15,4 +15,4 @@ cp vim/gvimrc ~/.gvimrc
 mkdir ~/.vim
 cp -r vim/dot_vim/* ~/.vim
 
-curl -o ~/.git_completion.bash https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
+curl -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
