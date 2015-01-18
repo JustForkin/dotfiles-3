@@ -26,7 +26,7 @@ alias gls='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Cr
 alias gc='git commit -v'
 alias gd="git diff"
 alias ga='git add'
-alias gap='git add -p'
+alias gap='git add -N . && git add -p'
 alias gdc="git diff --cached"
 alias gs="git status"
 alias gsd="git diff --stat --summary"
