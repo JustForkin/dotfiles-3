@@ -1,3 +1,4 @@
+set editing-mode vi
 set completion-ignore-case on
 
 "\C-a": beginning-of-line
