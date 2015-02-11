@@ -49,7 +49,7 @@ noremap tj :tabp<cr>
 noremap tk :tabn<cr>
 noremap tl :tablast<cr>
 
-map <f5> :w \| :call system("tmux resize -t1 -y20 && tmux send -t1 '!! && tmux resize -t0 -Z' c-j")<cr>
+map <f5> :w \| :call system("tmux resize -t1 -y20 && tmux send -t1 !! c-j")<cr>
 map <f6> :w \| :call system("tmux resize -t0 -Z")<cr>
 map <f7> :w \| :call system("tmux resize -t1 -y40")<cr>
 
