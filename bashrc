@@ -51,3 +51,9 @@ source ~/.git_completion.bash
 source ~/.tmux.completion.bash
 
 eval "$(rbenv init -)"
+
+hitch() {
+  command hitch "$@"
+  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+}
+alias unhitch='hitch -u'
