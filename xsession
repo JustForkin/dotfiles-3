@@ -1,1 +1,1 @@
-xmodmap ~/.xmodmap
+setxkbmap -option ctrl:swapcaps
