@@ -53,6 +53,8 @@ map <f5> :w \| :call system("tmux resize -t1 -y20 && tmux send -t1 !! c-j")<cr>
 map <f6> :w \| :call system("tmux resize -t0 -Z")<cr>
 map <f7> :w \| :call system("tmux resize -t1 -y40")<cr>
 
+map <Leader>h :Tab /=><cr>
+
 imap <f5> <esc> <f5>
 imap <f6> <esc> <f6>
 imap <f7> <esc> <f7>
