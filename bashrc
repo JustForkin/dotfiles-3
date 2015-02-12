@@ -43,7 +43,7 @@ alias trd="tmux attach-session -t"
 alias tpair="tmux -S /tmp/pair new -s pair"
 
 export INPUTRC=$HOME/.inputrc
-export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH:$HOME/bin
 
 set -o vi
 

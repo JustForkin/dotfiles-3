@@ -1,3 +1,6 @@
+# Create bin dir
+mkdir -p $HOME/bin
+
 # Misc
 cp bashrc ~/.bashrc
 cp gemrc ~/.gemrc
