@@ -54,6 +54,7 @@ map <f6> :w \| :call system("tmux resize -t0 -Z")<cr>
 map <f7> :w \| :call system("tmux resize -t1 -y40")<cr>
 
 map <Leader>h :Tab /=><cr>
+map <Leader>H :Tab /:\zs/l1r0<cr>
 
 imap <f5> <esc> <f5>
 imap <f6> <esc> <f6>
