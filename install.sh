@@ -9,6 +9,7 @@ cp gitignore_global ~/.gitignore_global
 cp inputrc ~/.inputrc
 cp tmux.conf ~/.tmux.conf
 cp tmux.completion.bash ~/.tmux.completion.bash
+cp xinitrc ~/.xinitrc
 
 # Vim
 rm -rf ~/.vim*
