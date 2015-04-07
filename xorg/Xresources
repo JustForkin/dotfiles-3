@@ -1,0 +1,7 @@
+XTerm*termName: xterm-256color
+XTerm*locale: True
+XTerm*metaSendsEscape: True
+XTerm*eightBitInput: False
+XTerm*faceName: Inconsolata:size=10:antialias=true
+XTerm*font: 7x13
+XTerm*reverseVideo: On
