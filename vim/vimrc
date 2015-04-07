@@ -27,6 +27,9 @@ set hidden
 
 let mapleader=","
 
+set backspace=indent,eol,start
+set t_kb=
+set t_kD=[3~
 noremap  <Up> ""
 noremap! <Up> <Esc>
 noremap  <Down> ""
