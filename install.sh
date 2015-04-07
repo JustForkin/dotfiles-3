@@ -20,7 +20,6 @@ cp -r config/* ~/.config
 rm -rf ~/.vim*
 
 cp vim/vimrc ~/.vimrc
-cp vim/gvimrc ~/.gvimrc
 mkdir ~/.vim
 cp -r vim/dot_vim/* ~/.vim
 
