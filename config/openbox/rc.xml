@@ -249,6 +249,9 @@
       <menu>root-menu</menu>
     </action>
   </keybind>
+  <keybind key="A-Tab">
+    <action name="NextWindow" />
+  </keybind>
 </keyboard>
 
 <mouse>

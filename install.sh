@@ -14,7 +14,7 @@ cp tmux.completion.bash ~/.tmux.completion.bash
 cp xorg/xinitrc ~/.xinitrc
 cp xorg/Xresources ~/.Xresources
 cp xorg/Xmodmap ~/.Xmodmap
-cp -r config ~/.config
+cp -r config/* ~/.config
 
 # Vim
 rm -rf ~/.vim*
