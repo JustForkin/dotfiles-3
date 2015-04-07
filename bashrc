@@ -50,6 +50,8 @@ set -o vi
 source ~/.git_completion.bash
 source ~/.tmux.completion.bash
 
+eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+
 eval "$(rbenv init -)"
 
 hitch() {
