@@ -252,6 +252,9 @@
   <keybind key="A-Tab">
     <action name="NextWindow" />
   </keybind>
+  <keybind key="C-S-s">
+    <action name="Execute"><command>scrot -s ~/Desktop/Screenshot.png</command></action>
+  </keybind>
 </keyboard>
 
 <mouse>
