@@ -22,7 +22,7 @@ alias brake="bundle exec rake"
 
 alias gitsha="git rev-parse HEAD | pbcopy"
 alias glf="git log --pretty=full"
-alias gls='git log --graph --decorate --oneline --all'
+alias gls='git log --graph --decorate --oneline'
 alias gc='git commit -v'
 alias gd="git diff"
 alias ga='git add'
