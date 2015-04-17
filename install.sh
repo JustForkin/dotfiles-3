@@ -22,5 +22,6 @@ rm -rf ~/.vim*
 cp vim/vimrc ~/.vimrc
 mkdir ~/.vim
 cp -r vim/dot_vim/* ~/.vim
+cp -r vim/bundle/* ~/.vim/bundle/
 
 curl -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
