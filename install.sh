@@ -1,3 +1,9 @@
+if [ "$1" == "osx" ]; then
+  CP_R="cp -R"
+else
+  CP_R="cp -r"
+fi
+
 # Create bin dir
 mkdir -p $HOME/bin
 
@@ -14,14 +20,14 @@ cp tmux.completion.bash ~/.tmux.completion.bash
 cp xorg/xinitrc ~/.xinitrc
 cp xorg/Xresources ~/.Xresources
 cp xorg/Xmodmap ~/.Xmodmap
-cp -r config/* ~/.config
+$CP_R config/ ~/.config
 
 # Vim
 rm -rf ~/.vim*
 
 cp vim/vimrc ~/.vimrc
 mkdir ~/.vim
-cp -r vim/dot_vim/* ~/.vim
-cp -r vim/bundle/* ~/.vim/bundle/
+$CP_R vim/dot_vim/* ~/.vim
+$CP_R vim/bundle/* ~/.vim/bundle/
 
 curl -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
