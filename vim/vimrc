@@ -2,7 +2,6 @@ execute pathogen#infect()
 
 set nocompatible
 filetype plugin indent on
-set t_Co=256
 syntax enable
 set background=dark
 colorscheme detailed
@@ -19,18 +18,13 @@ set shiftwidth=2
 set expandtab
 set nowrap
 set colorcolumn=80
-set backup
-set backupdir=~/.vim/tmp
-set directory=~/.vim/tmp
 set wildmode=longest,list
 set hidden
+set nobackup
 set noswapfile
 
 let mapleader=","
 
-set backspace=indent,eol,start
-set t_kb=
-set t_kD=[3~
 noremap  <Up> ""
 noremap! <Up> <Esc>
 noremap  <Down> ""
@@ -77,3 +71,8 @@ autocmd BufNewFile,BufRead *.slim set syntax=slim
 autocmd BufNewFile,BufRead Vagrantfile,Procfile,Guardfile,Gemfile set filetype=ruby
 
 let $PATH="./bin:".$PATH
+
+set backspace=2
+set t_kb=
+set t_kD=[3~
+set t_Co=256
