@@ -1,7 +1,7 @@
-CYAN="\[\e[1;32m\]"
-YELLOW="\[\e[1;33m\]"
-MAGENTA="\[\e[1;35m\]"
-GREEN="\[\e[1;36m\]"
+CYAN="\[\e[0;32m\]"
+YELLOW="\[\e[0;33m\]"
+MAGENTA="\[\e[0;35m\]"
+GREEN="\[\e[0;36m\]"
 GRAY="\[\e[0;37m\]"
 
 UNAME=$(uname)
@@ -50,9 +50,9 @@ set -o vi
 source ~/.git_completion.bash
 source ~/.tmux.completion.bash
 
-which keychain && eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+which keychain >/dev/null && eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
-which rbenv && eval "$(rbenv init -)"
+which rbenv >/dev/null && eval "$(rbenv init -)"
 
 hitch() {
   command hitch "$@"

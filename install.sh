@@ -20,6 +20,8 @@ cp tmux.completion.bash ~/.tmux.completion.bash
 cp xorg/xinitrc ~/.xinitrc
 cp xorg/Xresources ~/.Xresources
 cp xorg/Xmodmap ~/.Xmodmap
+echo -e "\n!** STARTING SOLARIZED**\n" >> ~/.Xresources
+cat xorg/solarized.xresources >> ~/.Xresources
 $CP_R config/ ~/.config
 
 # Vim
@@ -30,4 +32,4 @@ mkdir ~/.vim
 $CP_R vim/dot_vim/* ~/.vim
 $CP_R vim/bundle/* ~/.vim/bundle/
 
-curl -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash

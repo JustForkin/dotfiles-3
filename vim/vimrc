@@ -4,7 +4,7 @@ set nocompatible
 filetype plugin indent on
 syntax enable
 set background=dark
-colorscheme detailed
+colorscheme solarized
 set number
 set laststatus=2
 filetype indent on
