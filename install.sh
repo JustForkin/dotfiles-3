@@ -22,7 +22,11 @@ cp xorg/Xresources ~/.Xresources
 cp xorg/Xmodmap ~/.Xmodmap
 echo -e "\n!** STARTING SOLARIZED**\n" >> ~/.Xresources
 cat xorg/solarized.xresources >> ~/.Xresources
+rm -rf ~/.config
 $CP_R config/ ~/.config
+
+# keepass database
+mkdir -p ~/.keepass
 
 # Vim
 rm -rf ~/.vim/* ~/.vimrc ~/.viminfo

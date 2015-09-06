@@ -16,6 +16,11 @@
       </startupnotify>
     </action>
   </item>
+  <item label="Keepass">
+    <action name="Execute">
+      <command>keepass</command>
+    </action>
+  </item>
   <separator label="System" />
   <item label="Reconfigure">
     <action name="Reconfigure" />
