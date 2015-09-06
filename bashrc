@@ -47,6 +47,7 @@ export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH:$HOME/bin
 
 set -o vi
 
+eval `dircolors ~/.dir_colors`
 source ~/.git_completion.bash
 source ~/.tmux.completion.bash
 

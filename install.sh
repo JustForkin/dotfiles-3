@@ -33,3 +33,4 @@ $CP_R vim/dot_vim/* ~/.vim
 $CP_R vim/bundle/* ~/.vim/bundle/
 
 curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+curl -s -o ~/.dir_colors https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
