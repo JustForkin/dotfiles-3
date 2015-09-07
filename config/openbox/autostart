@@ -1,0 +1,3 @@
+if [ -f ~/.config/openbox/wallpaper ]; then
+  feh --bg-scale ~/.config/openbox/wallpaper
+fi

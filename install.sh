@@ -22,7 +22,7 @@ cp xorg/Xresources ~/.Xresources
 cp xorg/Xmodmap ~/.Xmodmap
 echo -e "\n!** STARTING SOLARIZED**\n" >> ~/.Xresources
 cat xorg/solarized.xresources >> ~/.Xresources
-rm -rf ~/.config
+rm -rf ~/.config/openbox/*
 $CP_R config/ ~/.config
 
 # keepass database
@@ -38,3 +38,4 @@ $CP_R vim/bundle/* ~/.vim/bundle/
 
 curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 curl -s -o ~/.dir_colors https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
+curl -s -o ~/.config/openbox/wallpaper http://digitalblasphemy.com/graphics/HDfree/shadedpath1HDfree.jpg
