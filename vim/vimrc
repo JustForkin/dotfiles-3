@@ -3,8 +3,6 @@ execute pathogen#infect()
 set nocompatible
 filetype plugin indent on
 syntax enable
-set background=dark
-colorscheme solarized
 set number
 set laststatus=2
 filetype indent on
@@ -76,3 +74,6 @@ set backspace=2
 set t_kb=
 set t_kD=[3~
 set t_Co=256
+
+set background=light
+colorscheme solarized
