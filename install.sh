@@ -25,10 +25,10 @@ cat xorg/solarized.xresources >> ~/.Xresources
 $CP_R config/ ~/.config
 
 # Vim
-rm -rf ~/.vim*
+rm -rf ~/.vim/* ~/.vimrc ~/.viminfo
 
 cp vim/vimrc ~/.vimrc
-mkdir ~/.vim
+mkdir -p ~/.vim
 $CP_R vim/dot_vim/* ~/.vim
 $CP_R vim/bundle/* ~/.vim/bundle/
 
