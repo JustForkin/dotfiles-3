@@ -17,13 +17,13 @@ cp tmux.conf ~/.tmux.conf
 cp tmux.completion.bash ~/.tmux.completion.bash
 
 # xorg
-cp xorg/xinitrc ~/.xinitrc
+cp xorg/xprofile ~/.xprofile
 cp xorg/Xresources ~/.Xresources
 cp xorg/Xmodmap ~/.Xmodmap
 echo -e "\n!** STARTING SOLARIZED**\n" >> ~/.Xresources
 cat xorg/solarized.xresources >> ~/.Xresources
-rm -rf ~/.config/openbox/*
-$CP_R config/ ~/.config
+rm -rf ~/.config/{openbox,fontconfig}/*
+$CP_R config/* ~/.config
 
 # keepass database
 mkdir -p ~/.keepass

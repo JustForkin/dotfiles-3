@@ -32,6 +32,3 @@ fi
 
 # Set dvorak layout
 setxkbmap dvorak
-
-# Start windowmanager
-exec openbox-session
