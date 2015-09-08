@@ -1,3 +1,4 @@
+BLACK="\[\e[0;30m\]"
 CYAN="\[\e[0;32m\]"
 YELLOW="\[\e[0;33m\]"
 MAGENTA="\[\e[0;35m\]"
@@ -7,7 +8,7 @@ GRAY="\[\e[0;37m\]"
 UNAME=$(uname)
 
 export EDITOR="vim"
-export PS1="$GRAY$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$GRAY\n# "
+export PS1="$GRAY$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$BLACK\n# "
 export TERM="xterm-256color"
 
 alias be="bundle exec"
