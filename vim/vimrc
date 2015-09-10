@@ -3,7 +3,7 @@ execute pathogen#infect()
 set nocompatible
 filetype plugin indent on
 syntax enable
-set number
+set relativenumber
 set laststatus=2
 filetype indent on
 set nohlsearch
