@@ -10,6 +10,9 @@ UNAME=$(uname)
 export EDITOR="vim"
 export PS1="$GRAY$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$BLACK\n# "
 export TERM="xterm-256color"
+export FTEST_CHILD_COUNT="4"
+export FTEST_VERBOSE="1"
+export FTEST_REVERSE_BACKTRACES="1"
 
 alias be="bundle exec"
 alias less="less -R"
