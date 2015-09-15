@@ -32,8 +32,9 @@ mkdir -p ~/.keepass
 rm -rf ~/.vim/* ~/.vimrc ~/.viminfo
 
 cp vim/vimrc ~/.vimrc
-mkdir -p ~/.vim
+mkdir ~/.vim
 $CP_R vim/dot_vim/* ~/.vim
+mkdir ~/.vim/bundle
 $CP_R vim/bundle/* ~/.vim/bundle/
 
 curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
