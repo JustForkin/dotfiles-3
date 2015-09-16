@@ -32,7 +32,7 @@ mkdir -p ~/.keepass
 rm -rf ~/.vim/* ~/.vimrc ~/.viminfo
 
 cp vim/vimrc ~/.vimrc
-mkdir ~/.vim
+mkdir -p ~/.vim
 $CP_R vim/dot_vim/* ~/.vim
 mkdir ~/.vim/bundle
 $CP_R vim/bundle/* ~/.vim/bundle/
