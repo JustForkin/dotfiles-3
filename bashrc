@@ -7,6 +7,8 @@ GRAY="\[\e[0;37m\]"
 
 UNAME=$(uname)
 
+stty erase ^?
+
 export EDITOR="vim"
 export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$BLACK\n# "
 export TERM="xterm-256color"
