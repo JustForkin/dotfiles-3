@@ -1,14 +1,14 @@
-BLACK="\[\e[0;37m\]" # reverse video
+BLACK="\[\e[0;30m\]" # reverse video
 CYAN="\[\e[0;32m\]"
 YELLOW="\[\e[0;33m\]"
 MAGENTA="\[\e[0;35m\]"
 GREEN="\[\e[0;36m\]"
-GRAY="\[\e[0;30m\]"
+GRAY="\[\e[0;37m\]"
 
 UNAME=$(uname)
 
 export EDITOR="vim"
-export PS1="$GRAY$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$BLACK\n# "
+export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$BLACK\n# "
 export TERM="xterm-256color"
 export TEST_RUNNER_CHILD_COUNT="4"
 export TEST_RUNNER_VERBOSE="1"
