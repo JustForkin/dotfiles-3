@@ -12,4 +12,6 @@ XTerm*selectToClipboard: True
               <Key>Delete:    string("\033[3~")\n\
               <Key>Home:      string("\033[1~")\n\
               <Key>End:       string("\033[4~")
-*ttyModes: erase ^?
+
+
+XTerm*ttyModes: erase ^?
