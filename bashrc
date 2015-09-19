@@ -1,9 +1,9 @@
-BLACK="\[\e[0;30m\]"
+BLACK="\[\e[0;37m\]" # reverse video
 CYAN="\[\e[0;32m\]"
 YELLOW="\[\e[0;33m\]"
 MAGENTA="\[\e[0;35m\]"
 GREEN="\[\e[0;36m\]"
-GRAY="\[\e[0;37m\]"
+GRAY="\[\e[0;30m\]"
 
 UNAME=$(uname)
 
