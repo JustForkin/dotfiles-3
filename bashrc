@@ -12,9 +12,8 @@ stty erase ^?
 export EDITOR="vim"
 export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')\[\e[0m\n# "
 export TERM="screen-256color"
-export TEST_RUNNER_CHILD_COUNT="4"
-export TEST_RUNNER_VERBOSE="1"
-export TEST_RUNNER_REVERSE_BACKTRACES="1"
+export TEST_BENCH_CHILD_COUNT="4"
+export TEST_BENCH_REVERSE_BACKTRACES="on"
 
 alias be="bundle exec"
 alias less="less -R"
