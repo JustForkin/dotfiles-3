@@ -10,7 +10,7 @@ UNAME=$(uname)
 stty erase ^?
 
 export EDITOR="vim"
-export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')$BLACK\n# "
+export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')\[\e[0m\n# "
 export TERM="screen-256color"
 export TEST_RUNNER_CHILD_COUNT="4"
 export TEST_RUNNER_VERBOSE="1"
