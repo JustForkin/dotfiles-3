@@ -10,9 +10,10 @@ UNAME=$(uname)
 stty erase ^?
 
 export EDITOR="vim"
-export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA\$(git branch 2>&1 | sed -nE -e 's/^\*(.*)\$/\1/p')\[\e[0m\n# "
+export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA \$(git symbolic-ref --short HEAD)\[\e[0m\n# "
 export TERM="screen-256color"
 export TEST_BENCH_REVERSE_BACKTRACES="on"
+export TEST_BENCH_EXCLUDE_PATTERN="_init.rb$"
 
 alias be="bundle exec"
 alias less="less -R"
