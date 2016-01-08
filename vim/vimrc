@@ -24,14 +24,18 @@ set spell spelllang=en_us
 
 let mapleader=","
 
-noremap  <Up> ""
-noremap! <Up> <Esc>
-noremap  <Down> ""
-noremap! <Down> <Esc>
-noremap  <Left> ""
-noremap! <Left> <Esc>
-noremap  <Right> ""
-noremap! <Right> <Esc>
+map <silent> <Up> gk
+imap <silent> <Up> <C-o>gk
+map <silent> <Down> gj
+imap <silent> <Down> <C-o>gj
+map <silent> <Left> h
+imap <silent> <Left> <C-o>gh
+map <silent> <Right> l
+imap <silent> <Right> <C-o>gl
+map <silent> <home> g<home>
+imap <silent> <home> <C-o>g<home>
+map <silent> <End> g<End>
+imap <silent> <End> <C-o>g<End>
 
 nnoremap K i<CR><Esc>
 
