@@ -20,6 +20,7 @@ set wildmode=longest,list
 set hidden
 set nobackup
 set noswapfile
+set spell spelllang=en_us
 
 let mapleader=","
 
