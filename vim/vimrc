@@ -62,7 +62,9 @@ runtime! plugin/tmux_navigator.vim
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
 autocmd BufNewFile,BufRead *.haml set wrap
 autocmd BufNewFile,BufRead *.slim set wrap
-autocmd BufNewFile,BufRead *.md set wrap
+
+autocmd BufNewFile,BufRead *.adoc,*.md set wrap
+autocmd BufNewFile,BufRead *.adoc,*.md set linebreak
 
 autocmd BufNewFile,BufRead *.slim set syntax=slim
 
