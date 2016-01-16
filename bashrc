@@ -43,6 +43,7 @@ alias gmer="git branch -a | grep -v HEAD | sed -E 's/^\*? *//' | xargs -L 1 git 
 alias grd='git_review_diffs() { base_commit=`git merge-base HEAD $1`;git log --reverse --pretty=%h $base_commit..HEAD | xargs -I{} -L1 git diff {}~1..{} -- $2 ; } ; git_review_diffs'
 alias rtags='ctags -R --languages=Ruby --totals -f tags'
 alias gemlocal="gem build *.gemspec && gem install *.gem && rm -vf *.gem"
+alias ruby-frozen-string-literal="ruby --enable-frozen-string-literal"
 
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
