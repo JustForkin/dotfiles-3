@@ -1,0 +1,16 @@
+servers = (
+  "settings",
+  {
+    core = {
+      real_name = "Nathan Ladd";
+      user_name = "realntl";
+      nick = "realntl";
+      hostname = "irc.freenode.net";
+    };
+    "fe-text" = { actlist_sort = "refnum"; };
+  }
+);
+settings = {
+  core = { real_name = "Nathan Ladd"; user_name = "ntl"; nick = "ntl"; };
+  "fe-text" = { actlist_sort = "refnum"; };
+};

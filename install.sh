@@ -28,6 +28,10 @@ $CP_R config/* ~/.config
 # keepass database
 mkdir -p ~/.keepass
 
+# irssi
+mkdir -p ~/.irssi
+cp irssi_config ~/.irssi/config
+
 # Vim
 rm -rf ~/.vim/* ~/.vimrc ~/.viminfo
 
