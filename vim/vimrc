@@ -70,6 +70,7 @@ autocmd BufNewFile,BufRead *.slim set wrap
 
 autocmd BufNewFile,BufRead *.adoc,*.md set wrap
 autocmd BufNewFile,BufRead *.adoc,*.md set linebreak
+autocmd BufNewFile,BufRead *.adoc,*.md set norelativenumber
 
 autocmd BufNewFile,BufRead *.slim set syntax=slim
 
