@@ -1,48 +1,41 @@
 execute pathogen#infect()
 
+set autoindent
+set nobackup
+set colorcolumn=80
 set nocompatible
-filetype plugin indent on
-syntax enable
-set relativenumber
-set laststatus=2
-filetype indent on
+set expandtab
+set hidden
 set nohlsearch
 set incsearch
+set laststatus=2
+set relativenumber
 set ruler
-set autoindent
-set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set expandtab
-set nowrap
-set colorcolumn=80
-set wildmode=longest,list
-set hidden
-set nobackup
-set noswapfile
 set spell spelllang=en_us
+set noswapfile
+set tabstop=2
+set wildmode=longest,list
+set nowrap
+
+filetype plugin indent on
+filetype indent on
+syntax enable
 
 let mapleader=","
 
 map <silent> <Up> gk
-imap <silent> <Up> <C-o>gk
 map <silent> <Down> gj
-imap <silent> <Down> <C-o>gj
 map <silent> <Left> h
-imap <silent> <Left> <C-o>gh
 map <silent> <Right> l
-imap <silent> <Right> <C-o>gl
 map <silent> <home> g<home>
-imap <silent> <home> <C-o>g<home>
 map <silent> <End> g<End>
-imap <silent> <End> <C-o>g<End>
 
-nnoremap K i<CR><Esc>
-
-noremap <Esc>H :vertical resize -5<cr>
-noremap <Esc>J :resize +5<cr>
-noremap <Esc>K :resize -5<cr>
-noremap <Esc>L :vertical resize +5<cr>
+noremap <Esc>h :vertical resize -5<cr>
+noremap <Esc>j :resize +5<cr>
+noremap <Esc>k :resize -5<cr>
+noremap <Esc>l :vertical resize +5<cr>
 
 noremap te :tabe<Space>
 noremap th :tabfirst<cr>
@@ -51,28 +44,25 @@ noremap tk :tabn<cr>
 noremap tl :tablast<cr>
 
 map <f5> :w \| :call system("tmux resize -t1 -y20 && tmux send -t1 !! c-j")<cr>
+imap <f5> <esc> <f5>
 map <f6> :w \| :call system("tmux resize -t0 -Z")<cr>
+imap <f6> <esc> <f6>
 map <f7> :w \| :call system("tmux resize -t1 -y40")<cr>
+imap <f7> <esc> <f7>
 
 map <Leader>h :Tab /=><cr>
 map <Leader>H :Tab /:\zs/l1r0<cr>
-
-imap <f5> <esc> <f5>
-imap <f6> <esc> <f6>
-imap <f7> <esc> <f7>
 
 runtime! macros/matchit.vim
 runtime! plugin/tmux_navigator.vim
 
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
-autocmd BufNewFile,BufRead *.haml set wrap
-autocmd BufNewFile,BufRead *.slim set wrap
 
-autocmd BufNewFile,BufRead *.adoc,*.md set wrap
+autocmd BufNewFile,BufRead *.haml,*.slim set wrap
+
 autocmd BufNewFile,BufRead *.adoc,*.md set linebreak
 autocmd BufNewFile,BufRead *.adoc,*.md set norelativenumber
-
-autocmd BufNewFile,BufRead *.slim set syntax=slim
+autocmd BufNewFile,BufRead *.adoc,*.md set wrap
 
 autocmd BufNewFile,BufRead Vagrantfile,Procfile,Guardfile,Gemfile set filetype=ruby
 
