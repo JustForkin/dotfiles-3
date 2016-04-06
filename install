@@ -1,0 +1,69 @@
+#!/bin/bash
+
+OSX=${OSX:-"off"}
+VERBOSE=${VERBOSE:-"off"}
+
+set -eu
+
+if [ "$VERBOSE" = "on" ]; then
+  set -x
+fi
+
+if [ "$OSX" == "on" ]; then
+  CP_R="cp -R"
+else
+  CP_R="cp -r"
+fi
+
+# Create bin dir
+mkdir -p ~/bin
+
+# Misc
+cp bashrc ~/.bashrc
+cp gemrc ~/.gemrc
+cp gitconfig ~/.gitconfig
+cp gitignore_global ~/.gitignore_global
+cp inputrc ~/.inputrc
+mkdir -p ~/.irssi; cp irssi_config ~/.irssi/config
+cp tmux.conf ~/.tmux.conf
+cp tmux.completion.bash ~/.tmux.completion.bash
+
+# Linux config
+if [ "$OSX" = "off" ]; then
+  cp xorg/xprofile ~/.xprofile
+  cp xorg/Xresources ~/.Xresources
+  cp xorg/Xmodmap ~/.Xmodmap
+  cat xorg/solarized.xresources >> ~/.Xresources
+
+  rm -rf ~/.config/{openbox,fontconfig}/*
+  $CP_R config/* ~/.config
+fi
+
+# keepass database
+mkdir -p ~/.keepass
+
+# Vim
+
+## Set up ~/.vim directory
+rm -rf ~/.vim ~/.vimrc ~/.viminfo
+$CP_R vim ~/.vim
+
+## Deploy pathogen script
+curl -L -s -o ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+## matchit (enable % closs-brace completion for HTML tags)
+curl -s -o ~/.vim/plugin/matchit.vim https://raw.githubusercontent.com/vim-scripts/matchit.zip/master/plugin/matchit.vim
+
+## solarized
+git clone -q --depth 1 git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/solarized
+
+## tabularize
+git clone -q --depth 1 git://github.com/godlygeek/tabular.git ~/.vim/bundle/tabularize
+
+## tmux-navigator
+curl -s -o ~/.vim/plugin/tmux_navigator.vim https://raw.githubusercontent.com/christoomey/vim-tmux-navigator/master/plugin/tmux_navigator.vim
+
+# Misc
+curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+curl -s -o ~/.dir_colors https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
+curl -s -o ~/.config/openbox/wallpaper http://digitalblasphemy.com/graphics/HDfree/shadedpath1HDfree.jpg
