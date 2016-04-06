@@ -1,4 +1,9 @@
-execute pathogen#infect()
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
+call pathogen#infect()
+
+runtime! plugin/matchit.vim
+runtime! plugin/tmux_navigator.vim
 
 set autoindent
 set nobackup
@@ -52,9 +57,6 @@ imap <f7> <esc> <f7>
 
 map <Leader>h :Tab /=><cr>
 map <Leader>H :Tab /:\zs/l1r0<cr>
-
-runtime! plugin/matchit.vim
-runtime! plugin/tmux_navigator.vim
 
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
 
