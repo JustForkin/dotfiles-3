@@ -51,6 +51,9 @@ $CP_R vim ~/.vim
 ## matchit (enable % closs-brace completion for HTML tags)
 curl -s -o ~/.vim/plugin/matchit.vim https://raw.githubusercontent.com/vim-scripts/matchit.zip/master/plugin/matchit.vim
 
+## NERDtree (file browser)
+git clone -q --depth 1 git://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+
 ## pathogen
 git clone -q --depth 1 git://github.com/tpope/vim-pathogen ~/.vim/bundle/vim-pathogen
 

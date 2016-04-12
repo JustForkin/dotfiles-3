@@ -58,6 +58,8 @@ imap <f7> <esc> <f7>
 map <Leader>h :Tab /=><cr>
 map <Leader>H :Tab /:\zs/l1r0<cr>
 
+map <Leader>t :NERDTreeToggle<cr>
+
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
 
 autocmd BufNewFile,BufRead *.haml,*.slim set wrap
