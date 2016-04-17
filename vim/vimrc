@@ -64,11 +64,11 @@ autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
 
 autocmd BufNewFile,BufRead *.haml,*.slim set wrap
 
-autocmd BufNewFile,BufRead *.adoc,*.md set linebreak
-autocmd BufNewFile,BufRead *.adoc,*.md set norelativenumber
-autocmd BufNewFile,BufRead *.adoc,*.md set wrap
+autocmd BufNewFile,BufRead *.adoc,*.md,*.txt set linebreak
+autocmd BufNewFile,BufRead *.adoc,*.md,*.txt set norelativenumber
+autocmd BufNewFile,BufRead *.adoc,*.md,*.txt set wrap
 
-autocmd BufNewFile,BufRead Vagrantfile,Procfile,Guardfile,Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Vagrantfile,Procfile,Guardfile,Gemfile,gemspec,*.gemspec set filetype=ruby
 
 let $PATH="./bin:".$PATH
 
