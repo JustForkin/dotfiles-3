@@ -47,7 +47,7 @@ alias ruby-frozen-string-literal="ruby --enable-frozen-string-literal"
 
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
-alias tpair="tmux -S /tmp/pair new -s pair"
+alias tpair="test -S /tmp/pair && tmux -S /tmp/pair attach-session || tmux -S /tmp/pair new -s pair"
 
 export INPUTRC=$HOME/.inputrc
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH:$HOME/bin
