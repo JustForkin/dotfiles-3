@@ -54,6 +54,7 @@ export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH:$HOME/bin
 
 set -o vi
 
+source ~/.ssh_completion.bash
 source ~/.git_completion.bash
 source ~/.tmux.completion.bash
 
