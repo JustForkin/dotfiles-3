@@ -43,10 +43,10 @@ noremap <Esc>k :resize -5<cr>
 noremap <Esc>l :vertical resize +5<cr>
 
 noremap te :tabe<Space>
-noremap th :tabfirst<cr>
-noremap tj :tabp<cr>
-noremap tk :tabn<cr>
-noremap tl :tablast<cr>
+noremap th :tabp<cr>
+noremap tH :tabfirst<cr>
+noremap tl :tabn<cr>
+noremap tL :tablast<cr>
 
 map <f5> :w \| :call system("tmux resize -t1 -y20 && tmux send -t1 !! c-j")<cr>
 imap <f5> <esc> <f5>
