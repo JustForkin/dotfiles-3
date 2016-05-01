@@ -49,6 +49,9 @@ mkdir -p ~/.keepass
 rm -rf ~/.vim ~/.vimrc ~/.viminfo
 $CP_R vim ~/.vim
 
+## gutentags (Automatically update ctags)
+git clone -q --depth 1 git://github.com/ludovicchabant/vim-gutentags.git ~/.vim/bundle/gutentags
+
 ## matchit (enable % closs-brace completion for HTML tags)
 curl -s -o ~/.vim/plugin/matchit.vim https://raw.githubusercontent.com/vim-scripts/matchit.zip/master/plugin/matchit.vim
 
