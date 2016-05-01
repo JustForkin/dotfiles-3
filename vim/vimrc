@@ -42,7 +42,7 @@ noremap <Esc>j :resize +5<cr>
 noremap <Esc>k :resize -5<cr>
 noremap <Esc>l :vertical resize +5<cr>
 
-noremap te :tabe<Space>
+noremap te :tabe<cr>
 noremap th :tabp<cr>
 noremap tH :tabfirst<cr>
 noremap tl :tabn<cr>
@@ -57,6 +57,8 @@ imap <f7> <esc> <f7>
 
 map <Leader>h :Tab /=><cr>
 map <Leader>H :Tab /:\zs/l1r0<cr>
+
+map <Leader>] :call system("ctags -R .")<cr>
 
 map <Leader>t :NERDTreeToggle<cr>
 
