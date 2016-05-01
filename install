@@ -58,6 +58,9 @@ git clone -q --depth 1 git://github.com/scrooloose/nerdtree.git ~/.vim/bundle/ne
 ## pathogen
 git clone -q --depth 1 git://github.com/tpope/vim-pathogen ~/.vim/bundle/vim-pathogen
 
+## rename.vim
+curl -s -o ~/.vim/plugin/rename.vim https://raw.githubusercontent.com/danro/rename.vim/master/plugin/rename.vim
+
 ## solarized
 git clone -q --depth 1 git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/solarized
 
