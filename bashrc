@@ -12,7 +12,7 @@ stty erase ^?
 export EDITOR="vim"
 export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA \$(git symbolic-ref --short HEAD 2>/dev/null)\[\e[0m\n# "
 export TERM="screen-256color"
-export GEM_HOME=./gems
+export GEM_PATH=./gems
 export TEST_BENCH_EXCLUDE_PATTERN="_init.rb$"
 
 alias be="bundle exec"
