@@ -2,7 +2,6 @@
 export EDITOR="vim"
 export INPUTRC=$HOME/.inputrc
 export TERM="screen-256color"
-export UNAME=$(uname)
 
 set -o vi
 
@@ -26,7 +25,7 @@ alias gd="git diff"
 alias gap='git add -N . && git add -p'
 alias gdc="git diff --cached"
 alias less="less -R"
-if [ "$UNAME" = "Linux" ]; then
+if [ "$(uname)" = "Linux" ]; then
   alias ls="ls --color"
 else
   alias ls="ls -G"
