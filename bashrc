@@ -1,6 +1,11 @@
-# Terminal
+# General
+UNAME=$(uname)
+
 export EDITOR="vim"
 export INPUTRC=$HOME/.inputrc
+if [ $UNAME != "Linux" ]; then
+  export PATH=/usr/local/bin:$PATH
+fi
 export TERM="screen-256color"
 
 set -o vi
@@ -25,7 +30,7 @@ alias gd="git diff"
 alias gap='git add -N . && git add -p'
 alias gdc="git diff --cached"
 alias less="less -R"
-if [ "$(uname)" = "Linux" ]; then
+if [ $UNAME = "Linux" ]; then
   alias ls="ls --color"
 else
   alias ls="ls -G"
@@ -37,7 +42,7 @@ alias tpair="test -S /tmp/pair && tmux -S /tmp/pair attach-session || tmux -S /t
 # Ruby configuration
 export GEM_PATH=./gems
 export TEST_BENCH_EXCLUDE_PATTERN="_init.rb$"
-export PATH=$HOME/.rbenv/bin
+export PATH=$HOME/.rbenv/bin:$PATH
 which rbenv >/dev/null && eval "$(rbenv init -)"
 
 # Tab completion
