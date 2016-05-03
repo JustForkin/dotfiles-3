@@ -29,6 +29,7 @@ alias gc='git commit -v'
 alias gd="git diff"
 alias gap='git add -N . && git add -p'
 alias gdc="git diff --cached"
+alias gs="git status"
 alias less="less -R"
 if [ $UNAME = "Linux" ]; then
   alias ls="ls --color"
