@@ -14,7 +14,7 @@ set hidden
 set nohlsearch
 set incsearch
 set laststatus=2
-set relativenumber
+set number
 set ruler
 set softtabstop=2
 set shiftwidth=2
