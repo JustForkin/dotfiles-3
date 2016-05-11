@@ -19,8 +19,9 @@ YELLOW="\[\e[0;33m\]"
 MAGENTA="\[\e[0;35m\]"
 GREEN="\[\e[0;36m\]"
 GRAY="\[\e[0;37m\]"
+RESET="\[\e[0m\]"
 
-export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA \$(git symbolic-ref --short HEAD 2>/dev/null)\[\e[0m\n# "
+export PS1="$YELLOW\u$GRAY@$CYAN\h $YELLOW\w$MAGENTA \$(git symbolic-ref --short HEAD 2>/dev/null)$RESET\n# "
 
 # Aliases
 alias glf="git log --pretty=full"
