@@ -45,7 +45,7 @@ alias tpair="test -S /tmp/pair && tmux -S /tmp/pair attach-session || tmux -S /t
 export GEM_PATH=./gems
 export TEST_BENCH_EXCLUDE_PATTERN="_init.rb$"
 export PATH=$HOME/.rbenv/bin:$PATH
-which rbenv >/dev/null && eval "$(rbenv init -)"
+which rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 
 # Tab completion
 source ~/.ssh_completion.bash

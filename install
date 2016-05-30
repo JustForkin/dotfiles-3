@@ -35,6 +35,7 @@ if [ $UNAME = "Linux" ]; then
   cp xorg/Xmodmap ~/.Xmodmap
   cat xorg/solarized.xresources >> ~/.Xresources
 
+  mkdir -p ~/.config
   rm -rf ~/.config/{openbox,fontconfig}/*
   $CP_R config/* ~/.config
 fi
