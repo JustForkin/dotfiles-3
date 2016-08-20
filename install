@@ -73,6 +73,9 @@ git clone -q --depth 1 git://github.com/godlygeek/tabular.git ~/.vim/bundle/tabu
 ## tmux-navigator
 curl -s -o ~/.vim/plugin/tmux_navigator.vim https://raw.githubusercontent.com/christoomey/vim-tmux-navigator/master/plugin/tmux_navigator.vim
 
+## vim-ruby
+git clone -q --depth 1 git://github.com/vim-ruby/vim-ruby.git ~/.vim/bundle/vim-ruby
+
 # Misc
 curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 curl -s -o ~/.dir_colors https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
