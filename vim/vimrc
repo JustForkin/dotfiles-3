@@ -13,7 +13,6 @@ set expandtab
 set hidden
 set nohlsearch
 set incsearch
-set laststatus=2
 set number
 set ruler
 set softtabstop=2
@@ -25,6 +24,17 @@ set noswapfile
 set tabstop=2
 set wildmode=longest,list
 set nowrap
+
+" Status Line {
+set laststatus=2                             " Status bar is always shown
+set statusline=                              " Status line is reset
+set statusline+=%f\                          " File name
+set statusline+=\[%{strlen(&ft)?&ft:'none'}] " File type
+set statusline+=%=                           " Remainder is right aligned
+set statusline+=b%-10.3n\                    " Buffer number
+set statusline+=0x%-8B                       " Hex code for the char at cursor
+set statusline+=%-14(%l,%c%V%)               " Line/character of cursor position
+"}
 
 filetype plugin indent on
 filetype indent on
