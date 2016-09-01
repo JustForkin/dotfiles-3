@@ -83,6 +83,9 @@ autocmd BufNewFile,BufRead *.adoc,*.md,*.txt set wrap
 
 autocmd BufNewFile,BufRead Vagrantfile,Procfile,Guardfile,Gemfile,gemspec,*.gemspec set filetype=ruby
 
+command -nargs=* -bar -complete=file TabnewLeft :execute (tabpagenr()-1).'tabnew '.<q-args>
+ca tabel TabnewLeft
+
 let $PATH="./bin:".$PATH
 
 set backspace=2
