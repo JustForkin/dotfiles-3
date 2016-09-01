@@ -29,7 +29,7 @@ set nowrap
 set laststatus=2                             " Status bar is always shown
 
 set statusline=                              " Status line is reset
-set statusline+=%f\                          " File name
+set statusline+=%f%M\                        " File name
 set statusline+=\[%{strlen(&ft)?&ft:'none'}] " File type
 set statusline+=%=                           " Remainder is right aligned
 set statusline+=\ b%-10.3n                   " Buffer number
