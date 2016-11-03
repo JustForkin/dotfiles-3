@@ -2,8 +2,8 @@ XTerm*termName: xterm-256color
 XTerm*locale: True
 XTerm*metaSendsEscape: True
 XTerm*eightBitInput: False
-XTerm*faceName: Inconsolata:size=18:antialias=true
-XTerm*font: 8x13
+XTerm*faceName: DejaVu Sansa Mono:style=Book:antialias=true
+XTerm*font: 9x15
 XTerm*reverseVideo: Off
 XTerm*selectToClipboard: True
 
