@@ -44,7 +44,13 @@ alias tpair="test -S /tmp/pair && tmux -S /tmp/pair attach-session || tmux -S /t
 # Ruby configuration
 export GEM_PATH=./gems
 export TEST_BENCH_EXCLUDE_PATTERN="_init.rb$"
-source /usr/local/share/chruby/chruby.sh
+
+if [ -f /usr/local/share/chruby/chruby.sh ]; then
+  source /usr/local/share/chruby/chruby.sh
+fi
+if [ -f /usr/share/chruby/chruby.sh ]; then
+  source /usr/share/chruby/chruby.sh
+fi
 
 # Tab completion
 source ~/.ssh_completion.bash
