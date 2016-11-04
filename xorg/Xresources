@@ -4,6 +4,7 @@ XTerm*metaSendsEscape: True
 XTerm*eightBitInput: False
 XTerm*faceName: DejaVu Sansa Mono:style=Book:antialias=true
 XTerm*font: 9x15
+XTerm*scaleHeight: 1.01
 XTerm*reverseVideo: Off
 XTerm*selectToClipboard: True
 
