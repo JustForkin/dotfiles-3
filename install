@@ -33,11 +33,13 @@ if [ $UNAME = "Linux" ]; then
   cp xorg/xprofile ~/.xprofile
   cp xorg/Xresources ~/.Xresources
   cp xorg/Xmodmap ~/.Xmodmap
-  cat xorg/solarized.xresources >> ~/.Xresources
 
   mkdir -p ~/.config
   rm -rf ~/.config/{openbox,fontconfig}/*
   $CP_R config/* ~/.config
+
+  echo -e "\n# Begin base16 colorscheme" >> ~/.bashrc
+  curl -s https://raw.githubusercontent.com/chriskempson/base16-shell/master/scripts/base16-tomorrow-night.sh >> ~/.bashrc
 fi
 
 # keepass database
@@ -64,8 +66,8 @@ git clone -q --depth 1 git://github.com/tpope/vim-pathogen ~/.vim/bundle/vim-pat
 ## rename.vim
 curl -s -o ~/.vim/plugin/rename.vim https://raw.githubusercontent.com/danro/rename.vim/master/plugin/rename.vim
 
-## solarized
-git clone -q --depth 1 git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/solarized
+## base16-vim (tomorrow night)
+curl -s -o ~/.vim/colors/base16-tomorrow-night.vim https://raw.githubusercontent.com/chriskempson/base16-vim/master/colors/base16-tomorrow-night.vim
 
 ## tabularize
 git clone -q --depth 1 git://github.com/godlygeek/tabular.git ~/.vim/bundle/tabularize

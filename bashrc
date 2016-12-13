@@ -6,7 +6,7 @@ export INPUTRC=$HOME/.inputrc
 if [ $UNAME != "Linux" ]; then
   export PATH=/usr/local/bin:$PATH
 fi
-export TERM="screen-256color"
+export TERM="xterm-256color"
 
 set -o vi
 

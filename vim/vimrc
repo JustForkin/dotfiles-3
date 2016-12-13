@@ -93,8 +93,9 @@ set t_kb=
 set t_kD=[3~
 set t_Co=256
 
-set background=light
-colorscheme solarized
+set background=dark
+let base16colorspace=256
+colorscheme base16-tomorrow-night
 
 if filereadable(glob("~/.vimrc.local"))
   source ~/.vimrc.local
