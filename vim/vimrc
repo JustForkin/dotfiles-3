@@ -1,14 +1,14 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-
-call pathogen#infect()
-
-runtime! plugin/matchit.vim
-runtime! plugin/tmux_navigator.vim
+" Terminal fixes
+set backspace=indent,eol,start
+set nocompatible
+set t_kb=
+set t_kD=[3~
+set t_Co=256
+set t_RV=
 
 set autoindent
 set nobackup
 set colorcolumn=80
-set nocompatible
 set expandtab
 set hidden
 set nohlsearch
@@ -24,8 +24,10 @@ set noswapfile
 set tabstop=2
 set wildmode=longest,list
 set nowrap
+ 
+filetype indent on
 
-" Status Line {  
+" Status Line
 set laststatus=2                             " Status bar is always shown
 
 set statusline=                              " Status line is reset
@@ -35,12 +37,22 @@ set statusline+=%=                           " Remainder is right aligned
 set statusline+=\ b%-10.3n                   " Buffer number
 set statusline+=\ 0x%-8B                     " Hex code for the char at cursor
 set statusline+=\ %-14(%l,%c%V%)             " Line/character of cursor position
-"}  
 
-filetype plugin indent on
-filetype indent on
-syntax enable
+" Pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 
+call pathogen#infect()
+
+runtime! plugin/matchit.vim
+runtime! plugin/tmux_navigator.vim
+
+" Color scheme
+set background=dark
+let base16colorspace=256
+syntax on
+colorscheme base16-tomorrow-night
+
+" Key bindings
 let mapleader=","
 
 map <silent> <Up> gk
@@ -68,11 +80,11 @@ imap <f6> <esc> <f6>
 map <f7> :w \| :call system("tmux resize -t1 -y40")<cr>
 imap <f7> <esc> <f7>
 
-map <Leader>h :Tab /=><cr>
-map <Leader>H :Tab /:\zs/l1r0<cr>
-
 map <Leader>t :NERDTreeToggle<cr>
+command -nargs=* -bar -complete=file TabnewLeft :execute (tabpagenr()-1).'tabnew '.<q-args>
+ca tabel TabnewLeft
 
+" Filetypes
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
 
 autocmd BufNewFile,BufRead *.haml,*.slim set wrap
@@ -83,20 +95,7 @@ autocmd BufNewFile,BufRead *.adoc,*.md,*.txt set wrap
 
 autocmd BufNewFile,BufRead Vagrantfile,Procfile,Guardfile,Gemfile,gemspec,*.gemspec set filetype=ruby
 
-command -nargs=* -bar -complete=file TabnewLeft :execute (tabpagenr()-1).'tabnew '.<q-args>
-ca tabel TabnewLeft
-
-let $PATH="./bin:".$PATH
-
-set backspace=2
-set t_kb=
-set t_kD=[3~
-set t_Co=256
-
-set background=dark
-let base16colorspace=256
-colorscheme base16-tomorrow-night
-
+" Local vimrc
 if filereadable(glob("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
