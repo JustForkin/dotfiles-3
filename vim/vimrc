@@ -1,3 +1,11 @@
+" Pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
+call pathogen#infect()
+
+runtime plugin/matchit.vim
+runtime plugin/tmux_navigator.vim
+
 " Terminal fixes
 set backspace=indent,eol,start
 set nocompatible
@@ -25,7 +33,9 @@ set tabstop=2
 set wildmode=longest,list
 set nowrap
  
+filetype on
 filetype indent on
+filetype plugin on
 
 " Status Line
 set laststatus=2                             " Status bar is always shown
@@ -37,14 +47,6 @@ set statusline+=%=                           " Remainder is right aligned
 set statusline+=\ b%-10.3n                   " Buffer number
 set statusline+=\ 0x%-8B                     " Hex code for the char at cursor
 set statusline+=\ %-14(%l,%c%V%)             " Line/character of cursor position
-
-" Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-
-call pathogen#infect()
-
-runtime! plugin/matchit.vim
-runtime! plugin/tmux_navigator.vim
 
 " Color scheme
 set background=dark
