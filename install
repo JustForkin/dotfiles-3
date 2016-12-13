@@ -37,10 +37,11 @@ if [ $UNAME = "Linux" ]; then
   mkdir -p ~/.config
   rm -rf ~/.config/{openbox,fontconfig}/*
   $CP_R config/* ~/.config
-
-  echo -e "\n# Begin base16 colorscheme" >> ~/.bashrc
-  curl -s https://raw.githubusercontent.com/chriskempson/base16-shell/master/scripts/base16-tomorrow-night.sh >> ~/.bashrc
 fi
+
+# Color scheme
+echo -e "\n# Begin base16 colorscheme" >> ~/.bashrc
+curl -s https://raw.githubusercontent.com/chriskempson/base16-shell/master/scripts/base16-tomorrow-night.sh >> ~/.bashrc
 
 # keepass database
 mkdir -p ~/.keepass
