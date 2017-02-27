@@ -1,0 +1,45 @@
+Global {
+  Allign = right
+  WidthType = request
+  Height = 24
+  AutoHide = true
+  RoundCorners = false
+}
+
+Plugin {
+  type = pager
+  config {
+    showwallpaper = true
+  }
+}
+
+Plugin {
+  type = space
+  config {
+    size = 10
+  }
+}
+
+plugin {
+  type = battery
+}
+
+Plugin {
+  type = tray
+}
+
+Plugin {
+  type = space
+  config {
+    size = 10
+  }
+}
+
+Plugin {
+  type = tclock
+  config {
+    ClockFmt = <b>%a %b %Y %H:%M %Z</b>
+    ShowCalendar = false
+    ShowTooltip = false
+  }
+}
