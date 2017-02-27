@@ -193,6 +193,14 @@
     <action name="SendToDesktop"><to>down</to><wrap>no</wrap></action>
   </keybind>
 
+  <!-- Brightness -->
+  <keybind key="XF86MonBrightnessDown">
+    <action name="Execute"><command>xbacklight -dec 10</command></action>
+  </keybind>
+  <keybind key="XF86MonBrightnessUp">
+    <action name="Execute"><command>xbacklight -inc 10</command></action>
+  </keybind>
+
   <!-- Keybindings for window switching with the arrow keys -->
   <keybind key="C-A-l">
     <action name="DirectionalCycleWindows">
