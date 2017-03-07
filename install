@@ -53,16 +53,16 @@ rm -rf ~/.vim ~/.vimrc ~/.viminfo
 $CP_R vim ~/.vim
 
 ## gutentags (Automatically update ctags)
-git clone -q --depth 1 git://github.com/ludovicchabant/vim-gutentags.git ~/.vim/bundle/gutentags
+git clone -q --depth 1 https://github.com/ludovicchabant/vim-gutentags.git ~/.vim/bundle/gutentags
 
 ## matchit (enable % closs-brace completion for HTML tags)
 curl -s -o ~/.vim/plugin/matchit.vim https://raw.githubusercontent.com/vim-scripts/matchit.zip/master/plugin/matchit.vim
 
 ## NERDtree (file browser)
-git clone -q --depth 1 git://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone -q --depth 1 https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
 ## pathogen
-git clone -q --depth 1 git://github.com/tpope/vim-pathogen ~/.vim/bundle/vim-pathogen
+git clone -q --depth 1 https://github.com/tpope/vim-pathogen ~/.vim/bundle/vim-pathogen
 
 ## rename.vim
 curl -s -o ~/.vim/plugin/rename.vim https://raw.githubusercontent.com/danro/rename.vim/master/plugin/rename.vim
@@ -71,13 +71,13 @@ curl -s -o ~/.vim/plugin/rename.vim https://raw.githubusercontent.com/danro/rena
 curl -s -o ~/.vim/colors/base16-tomorrow-night.vim https://raw.githubusercontent.com/chriskempson/base16-vim/master/colors/base16-tomorrow-night.vim
 
 ## tabularize
-git clone -q --depth 1 git://github.com/godlygeek/tabular.git ~/.vim/bundle/tabularize
+git clone -q --depth 1 https://github.com/godlygeek/tabular.git ~/.vim/bundle/tabularize
 
 ## tmux-navigator
 curl -s -o ~/.vim/plugin/tmux_navigator.vim https://raw.githubusercontent.com/christoomey/vim-tmux-navigator/master/plugin/tmux_navigator.vim
 
 ## vim-ruby
-git clone -q --depth 1 git://github.com/vim-ruby/vim-ruby.git ~/.vim/bundle/vim-ruby
+git clone -q --depth 1 https://github.com/vim-ruby/vim-ruby.git ~/.vim/bundle/vim-ruby
 
 # Misc
 curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
