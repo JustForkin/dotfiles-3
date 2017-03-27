@@ -38,7 +38,7 @@ Plugin {
 Plugin {
   type = tclock
   config {
-    ClockFmt = <b>%a %b %Y %H:%M %Z</b>
+    ClockFmt = <b>%a %b %e %Y %H:%M %Z</b>
     ShowCalendar = false
     ShowTooltip = false
   }
