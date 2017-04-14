@@ -5,3 +5,5 @@ fbpanel &
 volumeicon &
 
 nm-applet &
+
+display -backdrop -flatten -window root ~/.config/openbox/wallpaper.jpg
