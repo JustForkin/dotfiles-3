@@ -7,6 +7,9 @@
   <item label="Xterm">
     <action name="Execute"><command>xterm</command></action>
   </item>
+  <item label="Xterm (Large Font)">
+    <action name="Execute"><command>xterm -fs 24</command></action>
+  </item>
   <item label="Opera">
     <action name="Execute">
       <command>opera --new-window</command>
