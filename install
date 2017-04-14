@@ -41,7 +41,7 @@ fi
 
 # Color scheme
 echo -e "\n# Begin base16 colorscheme" >> ~/.bashrc
-curl -s https://raw.githubusercontent.com/chriskempson/base16-shell/master/scripts/base16-tomorrow-night.sh >> ~/.bashrc
+curl -s https://raw.githubusercontent.com/chriskempson/base16-shell/master/scripts/base16-solarized-light.sh >> ~/.bashrc
 
 # keepass database
 mkdir -p ~/.keepass
@@ -68,7 +68,7 @@ git clone -q --depth 1 https://github.com/tpope/vim-pathogen ~/.vim/bundle/vim-p
 curl -s -o ~/.vim/plugin/rename.vim https://raw.githubusercontent.com/danro/rename.vim/master/plugin/rename.vim
 
 ## base16-vim (tomorrow night)
-curl -s -o ~/.vim/colors/base16-tomorrow-night.vim https://raw.githubusercontent.com/chriskempson/base16-vim/master/colors/base16-tomorrow-night.vim
+curl -s -o ~/.vim/colors/base16-solarized-light.vim https://raw.githubusercontent.com/chriskempson/base16-vim/master/colors/base16-solarized-light.vim
 
 ## tabularize
 git clone -q --depth 1 https://github.com/godlygeek/tabular.git ~/.vim/bundle/tabularize
