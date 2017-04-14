@@ -35,7 +35,7 @@ if [ $UNAME = "Linux" ]; then
   cp xorg/Xmodmap ~/.Xmodmap
 
   mkdir -p ~/.config
-  rm -rf ~/.config/{openbox,fontconfig}/*
+  rm -rf ~/.config/{openbox,fontconfig,fbpanel}/*
   $CP_R config/* ~/.config
 fi
 
