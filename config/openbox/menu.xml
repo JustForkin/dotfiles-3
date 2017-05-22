@@ -15,6 +15,11 @@
       <command>opera --new-window</command>
     </action>
   </item>
+  <item label="Chrome">
+    <action name="Execute">
+      <command>google-chrome-stable</command>
+    </action>
+  </item>
   <separator label="System" />
   <item label="Reconfigure">
     <action name="Reconfigure" />
