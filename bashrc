@@ -32,14 +32,18 @@ alias gap='git add -N . && git add -p'
 alias gdc="git diff --cached"
 alias gs="git status"
 alias less="less -R"
+
 if [ $UNAME = "Linux" ]; then
   alias ls="ls --color"
 else
   alias ls="ls -G"
 fi
+
 alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
 alias tpair="test -S /tmp/pair && tmux -S /tmp/pair attach-session || tmux -S /tmp/pair new -s pair"
+
+alias rb="ruby --disable-gems --enable-frozen-string-literal"
 
 # Ruby configuration
 export GEM_PATH=./gems
