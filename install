@@ -79,6 +79,9 @@ curl -s -o ~/.vim/plugin/tmux_navigator.vim https://raw.githubusercontent.com/ch
 ## vim-ruby
 git clone -q --depth 1 https://github.com/vim-ruby/vim-ruby.git ~/.vim/bundle/vim-ruby
 
+## vim-slim
+git clone -q --depth 1 https://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
+
 # Misc
 curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 curl -s -o ~/.dir_colors https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
