@@ -43,7 +43,7 @@ alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
 alias tpair="test -S /tmp/pair && tmux -S /tmp/pair attach-session || tmux -S /tmp/pair new -s pair"
 
-alias rb="ruby --disable-gems --enable-frozen-string-literal"
+alias rb="ruby --disable-gems"
 
 # Ruby configuration
 export GEM_PATH=./gems
