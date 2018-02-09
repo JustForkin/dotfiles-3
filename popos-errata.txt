@@ -1,0 +1,5 @@
+* Suspend Sedation
+  See https://wiki.debian.org/SystemdSuspendSedation to cause the laptop to hibernate after 30 minutes of sleeping
+
+* Dvorak layout for hard drive decryption prompt
+  See https://github.com/pop-os/pop/issues/120
