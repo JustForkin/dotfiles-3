@@ -79,6 +79,9 @@ curl -s -o ~/.vim/plugin/tmux_navigator.vim https://raw.githubusercontent.com/ch
 ## vim-ruby
 git clone -q --depth 1 https://github.com/vim-ruby/vim-ruby.git ~/.vim/bundle/vim-ruby
 
+## vim-rust
+git clone -q --depth 1 https://github.com/rust-lang/rust.vim.git ~/.vim/bundle/rust.vim
+
 ## vim-slim
 git clone -q --depth 1 https://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
 
