@@ -10,8 +10,6 @@ export TERM="xterm-256color"
 
 set -o vi
 
-stty erase ^?
-
 # Prompt
 BLACK="\[\e[0;30m\]" # reverse video
 CYAN="\[\e[0;32m\]"
