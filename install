@@ -85,6 +85,9 @@ git clone -q --depth 1 https://github.com/rust-lang/rust.vim.git ~/.vim/bundle/r
 ## vim-slim
 git clone -q --depth 1 https://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
 
+## vim-toml
+git clone -q --depth 1 https://github.com/cespare/vim-toml.git ~/.vim/bundle/vim-toml
+
 # Misc
 curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 curl -s -o ~/.dir_colors https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark
