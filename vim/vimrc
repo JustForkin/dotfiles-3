@@ -44,9 +44,8 @@ set statusline=                              " Status line is reset
 set statusline+=%f%M\                        " File name
 set statusline+=\[%{strlen(&ft)?&ft:'none'}] " File type
 set statusline+=%=                           " Remainder is right aligned
-set statusline+=\ b%-10.3n                   " Buffer number
-set statusline+=\ 0x%-8B                     " Hex code for the char at cursor
-set statusline+=\ %-14(%l,%c%V%)             " Line/character of cursor position
+set statusline+=\ b%-3.3n                    " Buffer number
+set statusline+=\ %-7(%l,%c%V%)              " Line/character of cursor position
 
 " Color scheme
 set background=dark
