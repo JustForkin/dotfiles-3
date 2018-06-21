@@ -82,11 +82,17 @@ git clone -q --depth 1 https://github.com/vim-ruby/vim-ruby.git ~/.vim/bundle/vi
 ## vim-rust
 git clone -q --depth 1 https://github.com/rust-lang/rust.vim.git ~/.vim/bundle/rust.vim
 
+## vim-react
+git clone -q --depth 1 https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
+
 ## vim-slim
 git clone -q --depth 1 https://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
 
 ## vim-toml
 git clone -q --depth 1 https://github.com/cespare/vim-toml.git ~/.vim/bundle/vim-toml
+
+## vim-terraform
+git clone -q --depth 1 https://github.com/hashivim/vim-terraform.git ~/.vim/bundle/vim-terraform
 
 # Misc
 curl -s -o ~/.git_completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
