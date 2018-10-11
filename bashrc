@@ -42,6 +42,8 @@ alias tS="tmux new -s"
 alias trd="tmux attach-session -t"
 alias tpair="test -S /tmp/pair && tmux -S /tmp/pair attach-session || tmux -S /tmp/pair new -s pair"
 
+alias trelease = "kill $(ps -d --format pid,cmd,start_time --sort start_time | grep $(tmux display-message -p '#S' | sed -E 's/^(.)/[\1]/') | head -n 1 | cut -d ' ' -f 1)"
+
 alias rb="ruby --disable-gems"
 
 # Ruby configuration
