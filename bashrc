@@ -31,6 +31,7 @@ alias gdc="git diff --cached"
 alias gs="git status"
 alias less="less -R"
 alias copy-settings="for example in settings/*.example; do cp -v \$example settings/\$(basename \$example .example); done"
+alias tmux-maximize="tmux resize -Z"
 
 if [ $UNAME = "Linux" ]; then
   alias ls="ls --color"
