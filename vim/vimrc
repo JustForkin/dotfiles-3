@@ -25,7 +25,6 @@ set number
 set ruler
 set softtabstop=2
 set shiftwidth=2
-set spell spelllang=en_us
 set splitbelow
 set splitright
 set noswapfile
@@ -93,6 +92,8 @@ autocmd BufNewFile,BufRead *.haml,*.slim set wrap
 autocmd BufNewFile,BufRead *.adoc,*.md,*.txt set linebreak
 autocmd BufNewFile,BufRead *.adoc,*.md,*.txt set nonumber
 autocmd BufNewFile,BufRead *.adoc,*.md,*.txt set wrap
+
+autocmd BufNewFile,BufRead COMMIT_EDITMSG,*.adoc,*.md,*.txt set spell spelllang=en_us
 
 autocmd BufNewFile,BufRead Vagrantfile,Procfile,Guardfile,Gemfile,gemspec,*.gemspec set filetype=ruby
 
