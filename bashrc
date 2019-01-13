@@ -29,6 +29,7 @@ alias gd="git diff"
 alias gap='git add -N . && git add -p'
 alias gdc="git diff --cached"
 alias gs="git status"
+alias gri="git rebase -p --keep-empty -i"
 alias less="less -R"
 alias copy-settings="for example in settings/*.example; do cp -v \$example settings/\$(basename \$example .example); done"
 alias tmux-maximize="tmux resize -Z"
