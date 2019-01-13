@@ -3,8 +3,9 @@
 	email = nathanladd+github@gmail.com
 [push]
 	default = tracking
+	followTags = true
 [color]
-  ui = true
+	ui = true
 [core]
 	pager = less -+F
 	excludesfile = ~/.gitignore_global
