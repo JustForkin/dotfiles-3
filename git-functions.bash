@@ -122,16 +122,24 @@ git-start-branch() {(set $settings
   echo
 
   if [ $parent = $current ]; then
-    git checkout $branch
+    if git-branch-exists $branch; then
+      git checkout $branch
+    else
+      echo "(Not switching to new branch; it does not exist)"
+    fi
   fi
 )}
 
 execute() {( set $settings
   cmd=$@
 
-  echo "Command: $cmd"
+  echo "Command: $cmd (Dry Run: ${DRY_RUN:-(not set)})"
 
-  (set +eu; eval $cmd)
+  if ! git-dry-run; then
+    (set +eu; eval $cmd)
+  else
+    echo "(Dry run; command not executed)"
+  fi
 
   exitStatus=$?
 
@@ -166,4 +174,8 @@ git-branch-exists() {( set $settings
   branch=$1
 
   git show-ref --quiet --verify refs/heads/$branch
+)}
+
+git-dry-run() {( set $settings
+  test ${DRY_RUN:-} = 'on'
 )}
