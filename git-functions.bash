@@ -130,6 +130,26 @@ git-start-branch() {(set $settings
   fi
 )}
 
+git-create-empty-commit() {(set $settings
+  branch=$(git-capture-current-branch)
+
+  echo
+  echo "Creating empty commit"
+  echo "- - -"
+  echo
+  echo "Branch: $branch"
+  echo
+
+  if ! git-assure-nothing-staged; then
+    echo "Cannot create empty commit with unstaged or uncommitted changes"
+    echo
+    exit 1
+  fi
+
+  execute "git commit --only --allow-empty --allow-empty-message -m ''" &&
+    echo "Empty commit created (SHA: $(git-capture-sha))"
+)}
+
 execute() {( set $settings
   cmd=$@
 
@@ -176,6 +196,12 @@ git-branch-exists() {( set $settings
   git show-ref --quiet --verify refs/heads/$branch
 )}
 
+git-assure-nothing-staged() {(set $settings
+  set +e
+
+  git diff-index --quiet HEAD
+)}
+
 git-dry-run() {( set $settings
-  test ${DRY_RUN:-} = 'on'
+  test "${DRY_RUN:-}" = 'on'
 )}
