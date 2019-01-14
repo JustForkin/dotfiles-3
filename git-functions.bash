@@ -85,7 +85,45 @@ git-rename-current-branch() {(set $settings
 
   current=$(git-capture-branch)
 
-  git-rename-branch $current $next
+  git-rename-branch $current $next &&
+    echo "Renamed current branch ($current) to $next"
+)}
+
+git-start-branch() {(set $settings
+  branch=$1
+
+  current=$(git-capture-branch)
+  parent=${2:-$current}
+
+  echo
+  echo "Starting branch"
+  echo "- - -"
+  echo
+  echo "Branch: $branch"
+  echo -n "Parent: $parent (SHA: $(git-capture-sha $parent))"
+
+  if [ $current != $parent ]; then
+    echo -n " (Current: $current)"
+  fi
+
+  echo
+  echo
+
+  if git-branch-exists $branch; then
+    echo "Cannot start branch $branch; it exists (SHA: $(git-capture-sha $branch))"
+    echo
+
+    false
+  fi
+
+  execute "git branch $branch $parent" &&
+    echo "Started branch $branch from $parent (SHA: $(git-capture-sha $parent))"
+
+  echo
+
+  if [ $parent = $current ]; then
+    git checkout $branch
+  fi
 )}
 
 execute() {( set $settings
@@ -120,4 +158,12 @@ git-capture-sha() {( set $settings
   ref=${1:-$(git-capture-current-branch)}
 
   git rev-parse --short $ref
+)}
+
+git-branch-exists() {( set $settings
+  set +e
+
+  branch=$1
+
+  git show-ref --quiet --verify refs/heads/$branch
 )}
