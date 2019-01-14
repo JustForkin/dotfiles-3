@@ -33,6 +33,8 @@ alias less="less -R"
 alias copy-settings="for example in settings/*.example; do cp -v \$example settings/\$(basename \$example .example); done"
 alias tmux-maximize="tmux resize -Z"
 
+source ~/.git-functions.bash
+
 if [ $UNAME = "Linux" ]; then
   alias ls="ls --color"
 else
