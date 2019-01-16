@@ -4,7 +4,7 @@ if [ "$DEBUG" = "on" ]; then
   settings="${settings}x"
 fi
 
-git-reassign-current-branch() {( set $settings
+git-update-current-branch-ref() {( set $settings
   ref=$1
 
   branch=$(git-capture-current-branch)
@@ -31,7 +31,7 @@ git-reassign-current-branch() {( set $settings
     echo -e "\nMoved current branch ($branch) to $ref ($prevSHA -> $newSHA)"
 )}
 
-git-reassign-branch() {( set $settings
+git-update-branch-ref() {( set $settings
   branch=$1
   ref=$2
 
